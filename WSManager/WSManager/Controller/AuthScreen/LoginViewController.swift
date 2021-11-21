@@ -51,7 +51,7 @@ final class LoginViewController: UIViewController {
             switch result {
             case .success(let data):
                 do {
-                    let response = try JSONDecoder().decode(LoginResponse.self, from: data)
+                    let response = try JSONDecoder().decode(AuthResponse.self, from: data)
                     switch response.status {
                     case LoginStatus.notVerify.rawValue:
                         DispatchQueue.main.async { [weak self] in
@@ -104,7 +104,7 @@ final class LoginViewController: UIViewController {
                 type: .username, for: nil)
             let password = try passwordCustomTextField.textField.validateText(
                 type: .password, for: nil)
-            return ["ownerUsername":username, "ownerPassword":password]
+            return ["renterUsername":username, "renterPassword":password]
         } catch {
             showAlertAuth(title: "Hãy kiểm tra lại",
                           message: (error as! ValidatorError).message) { alert in

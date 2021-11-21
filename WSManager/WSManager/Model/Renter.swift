@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Owner {
+struct Renter {
     var id: String?
     var username: String
     var name: String
@@ -16,17 +16,19 @@ struct Owner {
     var mail: String
     var accountStatus: Int
     var dateRegister: String
+    var fbUrl: String?
 }
 
-extension Owner: Codable {
+extension Renter: Codable {
     enum CodingKeys: String, CodingKey {
         case id = "_id"
-        case username = "ownerUsername"
-        case name = "ownerName"
-        case password = "ownerPassword"
-        case phone = "ownerPhone"
-        case mail = "ownerEmail"
+        case username = "renterUsername"
+        case name = "renterName"
+        case password = "renterPassword"
+        case phone = "renterPhone"
+        case mail = "renterEmail"
         case accountStatus = "accountStatus"
-        case dateRegister = "ownerDateRegister"
+        case dateRegister = "renterDateRegister"
+        case fbUrl = "renterFbUrl"
     }
 }

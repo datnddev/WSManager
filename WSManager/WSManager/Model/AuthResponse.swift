@@ -7,19 +7,19 @@
 
 import Foundation
 
-struct LoginResponse {
+struct AuthResponse {
     var id: String?
     var message: String
     var status: Int?
-    var owner: Owner?
+    var renter: Renter?
 }
 
-extension LoginResponse: Codable {
+extension AuthResponse: Codable {
     enum CodingKeys: String, CodingKey {
         case id = "_id"
         case message = "message"
         case status = "status"
-        case owner = "data"
+        case renter = "data"
     }
 }
 

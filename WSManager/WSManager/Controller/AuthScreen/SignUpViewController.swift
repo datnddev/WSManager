@@ -74,13 +74,14 @@ final class SignUpViewController: UIViewController {
                                       params: owner) { result in
             switch result {
             case .success(let dataResponnse):
-                let response = try? JSONDecoder().decode(LoginResponse.self, from: dataResponnse)
+                let response = try? JSONDecoder().decode(AuthResponse.self, from: dataResponnse)
+                print(response)
                 DispatchQueue.main.async { [weak self] in
                     guard let self = self else { return }
                     self.showAlertAuth(title: "Đăng ký thành công",
                                        message: "Kiểm tra email để xác nhận tài khoản") { alert in
                         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
-                            self.backDidTapped()
+//                            self.backDidTapped()
                         }))
                     }
                 }
@@ -95,7 +96,7 @@ final class SignUpViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
-    private func validator() -> Owner?{
+    private func validator() -> Renter?{
         do {
             let name = try textFieldsContainer.nameCustomTextField
                 .textField.validateText(type: .name, for: nil)
@@ -110,10 +111,10 @@ final class SignUpViewController: UIViewController {
             let rePassword = try textFieldsContainer.rePassCustomTextField
                 .textField.validateText(type: .repassword, for: password)
             let dateRegister = Date().formatDate(format: "dd/MM/yyyy")
-            let owner = Owner(id: nil, username: username,
+            let owner = Renter(id: nil, username: username,
                               name: name, password: rePassword,
                               phone: phone, mail: mail,
-                              accountStatus: 1, dateRegister: dateRegister)
+                              accountStatus: 1, dateRegister: dateRegister, fbUrl: nil)
             return owner
         } catch {
             let errorMessage = (error as! ValidatorError).message

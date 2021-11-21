@@ -35,8 +35,8 @@
 		AB24E29E27439A72004148B2 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB24E29C27439A72004148B2 /* LoginViewController.xib */; };
 		AB24E2A22743AA97004148B2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB24E2A12743AA97004148B2 /* CustomTextField.swift */; };
 		AB24E2A42743AAA8004148B2 /* CustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB24E2A32743AAA8004148B2 /* CustomTextField.xib */; };
-		AB24E2A62743E6BC004148B2 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB24E2A52743E6BC004148B2 /* Owner.swift */; };
-		AB24E2A82743EC7F004148B2 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB24E2A72743EC7F004148B2 /* LoginResponse.swift */; };
+		AB24E2A62743E6BC004148B2 /* Renter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB24E2A52743E6BC004148B2 /* Renter.swift */; };
+		AB24E2A82743EC7F004148B2 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB24E2A72743EC7F004148B2 /* AuthResponse.swift */; };
 		AB24E2AF2743F1A3004148B2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB24E2AD2743F1A3004148B2 /* SignUpViewController.swift */; };
 		AB24E2B02743F1A3004148B2 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB24E2AE2743F1A3004148B2 /* SignUpViewController.xib */; };
 		AB24E2B22744000D004148B2 /* ValidatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB24E2B12744000D004148B2 /* ValidatorType.swift */; };
@@ -84,8 +84,8 @@
 		AB24E29C27439A72004148B2 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		AB24E2A12743AA97004148B2 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		AB24E2A32743AAA8004148B2 /* CustomTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextField.xib; sourceTree = "<group>"; };
-		AB24E2A52743E6BC004148B2 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
-		AB24E2A72743EC7F004148B2 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		AB24E2A52743E6BC004148B2 /* Renter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renter.swift; sourceTree = "<group>"; };
+		AB24E2A72743EC7F004148B2 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		AB24E2AD2743F1A3004148B2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		AB24E2AE2743F1A3004148B2 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		AB24E2B12744000D004148B2 /* ValidatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorType.swift; sourceTree = "<group>"; };
@@ -164,8 +164,8 @@
 				AB24E26D27434920004148B2 /* APIServices */,
 				AB24E26E27434946004148B2 /* Constants.swift */,
 				AB24E287274363AF004148B2 /* SplashModel.swift */,
-				AB24E2A52743E6BC004148B2 /* Owner.swift */,
-				AB24E2A72743EC7F004148B2 /* LoginResponse.swift */,
+				AB24E2A52743E6BC004148B2 /* Renter.swift */,
+				AB24E2A72743EC7F004148B2 /* AuthResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -402,7 +402,7 @@
 				AB24E27627434BEF004148B2 /* APIError.swift in Sources */,
 				AB24E294274393B9004148B2 /* UIViewController+.swift in Sources */,
 				AB24E281274360A9004148B2 /* ReusableView+.swift in Sources */,
-				AB24E2A62743E6BC004148B2 /* Owner.swift in Sources */,
+				AB24E2A62743E6BC004148B2 /* Renter.swift in Sources */,
 				AB24E279274355F4004148B2 /* SplashViewController.swift in Sources */,
 				AB24E288274363AF004148B2 /* SplashModel.swift in Sources */,
 				AB24E27C2743567C004148B2 /* UIColor+.swift in Sources */,
@@ -410,7 +410,7 @@
 				AB24E2B42744128B004148B2 /* Validator.swift in Sources */,
 				AB8A21492746395C00AD1F22 /* Cache+Entry.swift in Sources */,
 				AB24E2B827442DE3004148B2 /* UITextField+.swift in Sources */,
-				AB24E2A82743EC7F004148B2 /* LoginResponse.swift in Sources */,
+				AB24E2A82743EC7F004148B2 /* AuthResponse.swift in Sources */,
 				AB24E2852743614B004148B2 /* SplashCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
