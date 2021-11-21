@@ -45,18 +45,18 @@
 		AB24E2B827442DE3004148B2 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB24E2B727442DE3004148B2 /* UITextField+.swift */; };
 		AB8A21402745EFA700AD1F22 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A213E2745EFA700AD1F22 /* HomeViewController.swift */; };
 		AB8A21412745EFA700AD1F22 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8A213F2745EFA700AD1F22 /* HomeViewController.xib */; };
-		ABE1333A2745780B00EC9377 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE133392745780B00EC9377 /* Date+.swift */; };
 		AB8A21452746384E00AD1F22 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A21442746384E00AD1F22 /* Cache.swift */; };
 		AB8A21472746390200AD1F22 /* Cache+WrappedKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A21462746390200AD1F22 /* Cache+WrappedKey.swift */; };
 		AB8A21492746395C00AD1F22 /* Cache+Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A21482746395C00AD1F22 /* Cache+Entry.swift */; };
 		AB8A214B27463B1500AD1F22 /* Cache+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A214A27463B1500AD1F22 /* Cache+.swift */; };
 		AB8A214D27463C1900AD1F22 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A214C27463C1900AD1F22 /* ImageCacheManager.swift */; };
+		ABE1333A2745780B00EC9377 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE133392745780B00EC9377 /* Date+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB075F072744FBFA0063440F /* InforTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InforTextFields.swift; sourceTree = "<group>"; };
 		AB075F092744FC060063440F /* InforTextFields.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InforTextFields.xib; sourceTree = "<group>"; };
-		AB24E25027434684004148B2 /* WeSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB24E25027434684004148B2 /* WSManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB24E25327434684004148B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB24E25527434684004148B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AB24E25727434684004148B2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -94,12 +94,12 @@
 		AB24E2B727442DE3004148B2 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		AB8A213E2745EFA700AD1F22 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AB8A213F2745EFA700AD1F22 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		ABE133392745780B00EC9377 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		AB8A21442746384E00AD1F22 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		AB8A21462746390200AD1F22 /* Cache+WrappedKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cache+WrappedKey.swift"; sourceTree = "<group>"; };
 		AB8A21482746395C00AD1F22 /* Cache+Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cache+Entry.swift"; sourceTree = "<group>"; };
 		AB8A214A27463B1500AD1F22 /* Cache+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cache+.swift"; sourceTree = "<group>"; };
 		AB8A214C27463C1900AD1F22 /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
+		ABE133392745780B00EC9377 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,7 @@
 		AB24E24727434684004148B2 = {
 			isa = PBXGroup;
 			children = (
-				AB24E25227434684004148B2 /* WeSports */,
+				AB24E25227434684004148B2 /* WSManager */,
 				AB24E25127434684004148B2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,12 +124,12 @@
 		AB24E25127434684004148B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB24E25027434684004148B2 /* WeSports.app */,
+				AB24E25027434684004148B2 /* WSManager.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB24E25227434684004148B2 /* WeSports */ = {
+		AB24E25227434684004148B2 /* WSManager */ = {
 			isa = PBXGroup;
 			children = (
 				AB24E26727434752004148B2 /* Delegates */,
@@ -143,7 +143,7 @@
 				AB24E25E27434685004148B2 /* LaunchScreen.storyboard */,
 				AB24E26127434685004148B2 /* Info.plist */,
 			);
-			path = WeSports;
+			path = WSManager;
 			sourceTree = "<group>";
 		};
 		AB24E26727434752004148B2 /* Delegates */ = {
@@ -201,7 +201,6 @@
 				AB24E28B274365F2004148B2 /* UIView+.swift */,
 				AB24E293274393B9004148B2 /* UIViewController+.swift */,
 				AB24E2B727442DE3004148B2 /* UITextField+.swift */,
-				AB075F0D2744FDD40063440F /* CustomViewXib+.swift */,
 				ABE133392745780B00EC9377 /* Date+.swift */,
 				AB8A21462746390200AD1F22 /* Cache+WrappedKey.swift */,
 				AB8A21482746395C00AD1F22 /* Cache+Entry.swift */,
@@ -275,6 +274,15 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
+		AB8A213D2745EDCF00AD1F22 /* OwnerScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AB8A213E2745EFA700AD1F22 /* HomeViewController.swift */,
+				AB8A213F2745EFA700AD1F22 /* HomeViewController.xib */,
+			);
+			path = OwnerScreen;
+			sourceTree = "<group>";
+		};
 		AB8A21422746381900AD1F22 /* Validator */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,21 +301,12 @@
 			path = Cache;
 			sourceTree = "<group>";
 		};
-		AB8A213D2745EDCF00AD1F22 /* OwnerScreen */ = {
-			isa = PBXGroup;
-			children = (
-				AB8A213E2745EFA700AD1F22 /* HomeViewController.swift */,
-				AB8A213F2745EFA700AD1F22 /* HomeViewController.xib */,
-			);
-			path = OwnerScreen;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB24E24F27434684004148B2 /* WeSports */ = {
+		AB24E24F27434684004148B2 /* WSManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB24E26427434685004148B2 /* Build configuration list for PBXNativeTarget "WeSports" */;
+			buildConfigurationList = AB24E26427434685004148B2 /* Build configuration list for PBXNativeTarget "WSManager" */;
 			buildPhases = (
 				AB24E24C27434684004148B2 /* Sources */,
 				AB24E24D27434684004148B2 /* Frameworks */,
@@ -317,9 +316,9 @@
 			);
 			dependencies = (
 			);
-			name = WeSports;
+			name = WSManager;
 			productName = WeSports;
-			productReference = AB24E25027434684004148B2 /* WeSports.app */;
+			productReference = AB24E25027434684004148B2 /* WSManager.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -336,7 +335,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AB24E24B27434684004148B2 /* Build configuration list for PBXProject "WeSports" */;
+			buildConfigurationList = AB24E24B27434684004148B2 /* Build configuration list for PBXProject "WSManager" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -349,7 +348,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB24E24F27434684004148B2 /* WeSports */,
+				AB24E24F27434684004148B2 /* WSManager */,
 			);
 		};
 /* End PBXProject section */
@@ -552,12 +551,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WeSports/Info.plist;
+				INFOPLIST_FILE = WSManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = learning.basic.WeSports;
+				PRODUCT_BUNDLE_IDENTIFIER = learning.basic.WSManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -570,12 +569,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WeSports/Info.plist;
+				INFOPLIST_FILE = WSManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = learning.basic.WeSports;
+				PRODUCT_BUNDLE_IDENTIFIER = learning.basic.WSManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -585,7 +584,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB24E24B27434684004148B2 /* Build configuration list for PBXProject "WeSports" */ = {
+		AB24E24B27434684004148B2 /* Build configuration list for PBXProject "WSManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB24E26227434685004148B2 /* Debug */,
@@ -594,7 +593,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB24E26427434685004148B2 /* Build configuration list for PBXNativeTarget "WeSports" */ = {
+		AB24E26427434685004148B2 /* Build configuration list for PBXNativeTarget "WSManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB24E26527434685004148B2 /* Debug */,
