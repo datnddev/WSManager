@@ -75,15 +75,29 @@ final class SignUpViewController: UIViewController {
             switch result {
             case .success(let dataResponnse):
                 let response = try? JSONDecoder().decode(AuthResponse.self, from: dataResponnse)
-                print(response)
-                DispatchQueue.main.async { [weak self] in
-                    guard let self = self else { return }
-                    self.showAlertAuth(title: "Đăng ký thành công",
-                                       message: "Kiểm tra email để xác nhận tài khoản") { alert in
-                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
-//                            self.backDidTapped()
-                        }))
+                guard let response = response else { return }
+                switch response.status {
+                case 1:
+                    DispatchQueue.main.async { [weak self] in
+                        guard let self = self else { return }
+                        self.showAlertAuth(title: "Đăng ký thành công",
+                                           message: "Kiểm tra email để xác nhận tài khoản") { alert in
+                            alert.addAction(UIAlertAction(title: "OK",
+                                                          style: .default, handler: nil))
+                        }
                     }
+                case 0:
+                    DispatchQueue.main.async { [weak self] in
+                        guard let self = self else { return }
+                        self.showAlertAuth(title: "Đăng ký thành công",
+                                           message: "Kiểm tra email để xác nhận tài khoản") { alert in
+                            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+                                self.backDidTapped()
+                            }))
+                        }
+                    }
+                default:
+                    fatalError("Error code not vail")
                 }
             case .failure(let error):
                 print(error)

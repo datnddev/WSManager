@@ -80,7 +80,7 @@ final class LoginViewController: UIViewController {
                             }
                         }
                     case LoginStatus.succes.rawValue:
-                        guard let owner = response.owner else { return }
+                        guard let owner = response.renter else { return }
                         UserDefaults.standard.setValue(owner.id, forKey: Constant.loggedKey)
                         DispatchQueue.main.async { [weak self] in
                             guard let self = self else { return }

@@ -1,0 +1,6 @@
+framework module Pods_WSManager {
+  umbrella header "Pods-WSManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

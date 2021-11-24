@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="InforFieldCollectionViewCell" customModule="WSManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="328"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="328"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXR-ZB-Bza">
+                        <rect key="frame" x="0.0" y="0.0" width="448" height="328"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qUk-pv-0fi">
+                                <rect key="frame" x="10" y="0.0" width="428" height="321.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="F1A-fW-Uwm">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="280-Nc-kgs" customClass="CustomTextField" customModule="WSManager" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="258" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="tintColor" red="0.12941176469999999" green="0.1019607843" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="lbe-Uq-3w9"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leadingIcon" value="sportscourt.fill" catalog="system"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.1960784314" green="0.1960784314" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXp-BW-uJs" customClass="CustomTextField" customModule="WSManager" customModuleProvider="target">
+                                                <rect key="frame" x="268" y="0.0" width="160" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="tintColor" red="0.12941176469999999" green="0.1019607843" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="Rau-Zy-4mj"/>
+                                                    <constraint firstAttribute="height" constant="50" id="daR-tp-3tp"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leadingIcon" value="person.3.fill" catalog="system"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.1960784314" green="0.1960784314" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Số lượng"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAf-Mb-sRR" customClass="CustomTextField" customModule="WSManager" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="60" width="428" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="tintColor" red="0.12941176469999999" green="0.1019607843" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="joI-8v-tKS"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leadingIcon" value="note.text" catalog="system"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.1960784314" green="0.1960784314" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Tên sân"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2J-T6-4eV" customClass="CustomTextField" customModule="WSManager" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="120" width="428" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="tintColor" red="0.12941176469999999" green="0.1019607843" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="nqQ-y0-PTR"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leadingIcon" value="house.fill" catalog="system"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.1960784314" green="0.1960784314" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Địa chỉ"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9dg-zZ-e88">
+                                        <rect key="frame" x="0.0" y="180" width="428" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZuB-3s-VQQ" customClass="CustomTextField" customModule="WSManager" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="209" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="tintColor" red="0.12941176469999999" green="0.1019607843" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="sNH-GG-HbP"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leadingIcon" value="building.2.fill" catalog="system"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.1960784314" green="0.1960784314" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYY-1g-UdU" customClass="CustomTextField" customModule="WSManager" customModuleProvider="target">
+                                                <rect key="frame" x="219" y="0.0" width="209" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="tintColor" red="0.12941176469999999" green="0.1019607843" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="n99-ZT-oIE"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leadingIcon" value="building.fill" catalog="system"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.1960784314" green="0.1960784314" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NZx-u8-E7z">
+                                        <rect key="frame" x="0.0" y="240" width="428" height="21.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thời gian mở cửa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8U-N2-02d">
+                                                <rect key="frame" x="0.0" y="0.0" width="278" height="21.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21.5" id="bzY-lx-MxM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mỗi hiệp (phút):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGz-GD-kDc">
+                                                <rect key="frame" x="288" y="0.0" width="140" height="21.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21.5" id="IR1-cJ-Peh"/>
+                                                    <constraint firstAttribute="width" constant="140" id="nHe-2l-jge"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PTQ-Gf-61v">
+                                        <rect key="frame" x="0.0" y="271.5" width="428" height="50"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7ZI-PU-Ddv">
+                                                <rect key="frame" x="0.0" y="0.0" width="278" height="50"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ip-Fu-9IP" customClass="CustomTextField" customModule="WSManager" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="134" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="tintColor" red="0.12941176469999999" green="0.1019607843" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="7SL-Rf-yDc"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leadingIcon" value="calendar.badge.clock.rtl" catalog="system"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.1960784314" green="0.1960784314" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Từ"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80N-pI-LQO" customClass="CustomTextField" customModule="WSManager" customModuleProvider="target">
+                                                        <rect key="frame" x="144" y="0.0" width="134" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="tintColor" red="0.12941176469999999" green="0.1019607843" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="Lbf-nR-yw1"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leadingIcon" value="calendar.badge.clock" catalog="system"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.1960784314" green="0.1960784314" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Đến"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wsi-Jg-iEU" customClass="CustomTextField" customModule="WSManager" customModuleProvider="target">
+                                                <rect key="frame" x="288" y="0.0" width="140" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="tintColor" red="0.12941176469999999" green="0.1019607843" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="x16-rw-ZVn"/>
+                                                    <constraint firstAttribute="width" constant="140" id="zGS-XB-IiF"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leadingIcon" value="clock.fill" catalog="system"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.1960784314" green="0.1960784314" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="321.5" id="anx-N4-8Ax"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qUk-pv-0fi" secondAttribute="trailing" constant="10" id="36M-Pz-sFc"/>
+                            <constraint firstItem="qUk-pv-0fi" firstAttribute="leading" secondItem="uXR-ZB-Bza" secondAttribute="leading" constant="10" id="aN1-gO-4OV"/>
+                            <constraint firstItem="qUk-pv-0fi" firstAttribute="top" secondItem="uXR-ZB-Bza" secondAttribute="top" id="dgA-Tg-i2e"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uXR-ZB-Bza" secondAttribute="trailing" id="3zh-17-98d"/>
+                <constraint firstAttribute="bottom" secondItem="uXR-ZB-Bza" secondAttribute="bottom" id="Pc2-Pf-j65"/>
+                <constraint firstItem="uXR-ZB-Bza" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WlG-7N-c71"/>
+                <constraint firstItem="uXR-ZB-Bza" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YEK-bN-29S"/>
+            </constraints>
+            <size key="customSize" width="448" height="428"/>
+            <connections>
+                <outlet property="cityCustomText" destination="ZuB-3s-VQQ" id="FOD-iX-sGv"/>
+                <outlet property="closeTimeCustomText" destination="80N-pI-LQO" id="1bJ-jU-GqU"/>
+                <outlet property="districtCustomText" destination="hYY-1g-UdU" id="Rzy-Yn-d2d"/>
+                <outlet property="fieldAddressCustomText" destination="I2J-T6-4eV" id="Nt1-6w-lqb"/>
+                <outlet property="fieldNameCustomText" destination="eAf-Mb-sRR" id="sIX-eK-HiT"/>
+                <outlet property="fieldTypeCustomText" destination="280-Nc-kgs" id="7Mz-bb-EWF"/>
+                <outlet property="startTimeCustomText" destination="9Ip-Fu-9IP" id="kFo-W8-35n"/>
+                <outlet property="timePerRentalCustomTextField" destination="wsi-Jg-iEU" id="EKq-0o-CMA"/>
+            </connections>
+            <point key="canvasLocation" x="418.84057971014494" y="123.88392857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="building.2.fill" catalog="system" width="128" height="106"/>
+        <image name="building.fill" catalog="system" width="108" height="128"/>
+        <image name="calendar.badge.clock" catalog="system" width="128" height="108"/>
+        <image name="calendar.badge.clock.rtl" catalog="system" width="128" height="108"/>
+        <image name="clock.fill" catalog="system" width="128" height="121"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="note.text" catalog="system" width="128" height="106"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="sportscourt.fill" catalog="system" width="128" height="84"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

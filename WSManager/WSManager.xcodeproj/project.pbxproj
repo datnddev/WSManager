@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A424B2C039C524E21E042E7 /* Pods_WSManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7183F72C43DFDAA5A7F38C24 /* Pods_WSManager.framework */; };
 		AB075F082744FBFA0063440F /* InforTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB075F072744FBFA0063440F /* InforTextFields.swift */; };
 		AB075F0A2744FC060063440F /* InforTextFields.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB075F092744FC060063440F /* InforTextFields.xib */; };
 		AB24E25427434684004148B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB24E25327434684004148B2 /* AppDelegate.swift */; };
@@ -43,6 +44,12 @@
 		AB24E2B42744128B004148B2 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB24E2B32744128B004148B2 /* Validator.swift */; };
 		AB24E2B6274412A9004148B2 /* ValidatorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB24E2B5274412A9004148B2 /* ValidatorConvertible.swift */; };
 		AB24E2B827442DE3004148B2 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB24E2B727442DE3004148B2 /* UITextField+.swift */; };
+		AB4E0A74274DD75700B7CD58 /* FeatureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4E0A72274DD75700B7CD58 /* FeatureCollectionViewCell.swift */; };
+		AB4E0A75274DD75700B7CD58 /* FeatureCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB4E0A73274DD75700B7CD58 /* FeatureCollectionViewCell.xib */; };
+		AB4E0A78274DDF3000B7CD58 /* ImageFieldCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4E0A76274DDF3000B7CD58 /* ImageFieldCollectionViewCell.swift */; };
+		AB4E0A79274DDF3000B7CD58 /* ImageFieldCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB4E0A77274DDF3000B7CD58 /* ImageFieldCollectionViewCell.xib */; };
+		AB531E07274AD7C6005E1459 /* CreateFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB531E05274AD7C6005E1459 /* CreateFieldViewController.swift */; };
+		AB531E08274AD7C6005E1459 /* CreateFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB531E06274AD7C6005E1459 /* CreateFieldViewController.xib */; };
 		AB8A21402745EFA700AD1F22 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A213E2745EFA700AD1F22 /* HomeViewController.swift */; };
 		AB8A21412745EFA700AD1F22 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8A213F2745EFA700AD1F22 /* HomeViewController.xib */; };
 		AB8A21452746384E00AD1F22 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A21442746384E00AD1F22 /* Cache.swift */; };
@@ -50,10 +57,91 @@
 		AB8A21492746395C00AD1F22 /* Cache+Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A21482746395C00AD1F22 /* Cache+Entry.swift */; };
 		AB8A214B27463B1500AD1F22 /* Cache+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A214A27463B1500AD1F22 /* Cache+.swift */; };
 		AB8A214D27463C1900AD1F22 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A214C27463C1900AD1F22 /* ImageCacheManager.swift */; };
+		ABBE4C83274B43600027FAD4 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBE4C82274B43600027FAD4 /* UIApplication+.swift */; };
+		ABBE4C85274BA5E40027FAD4 /* FieldInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBE4C84274BA5E40027FAD4 /* FieldInput.swift */; };
+		ABBE4C87274BA5F00027FAD4 /* FieldInput.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABBE4C86274BA5F00027FAD4 /* FieldInput.xib */; };
+		ABBE4C8B274BA7E90027FAD4 /* InforFieldCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBE4C89274BA7E90027FAD4 /* InforFieldCollectionViewCell.swift */; };
+		ABBE4C8C274BA7E90027FAD4 /* InforFieldCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABBE4C8A274BA7E90027FAD4 /* InforFieldCollectionViewCell.xib */; };
+		ABBE4C8F274BD1E20027FAD4 /* FieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBE4C8E274BD1E20027FAD4 /* FieldType.swift */; };
+		ABBE4C91274BD27A0027FAD4 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBE4C90274BD27A0027FAD4 /* City.swift */; };
+		ABBE4C93274BD2960027FAD4 /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBE4C92274BD2960027FAD4 /* District.swift */; };
+		ABBE4C97274C06000027FAD4 /* FieldTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBE4C95274C06000027FAD4 /* FieldTypeTableViewCell.swift */; };
+		ABBE4C98274C06000027FAD4 /* FieldTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABBE4C96274C06000027FAD4 /* FieldTypeTableViewCell.xib */; };
+		ABC4AB92274C83960049C5D3 /* 17.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB54274C83910049C5D3 /* 17.json */; };
+		ABC4AB93274C83960049C5D3 /* 46.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB55274C83920049C5D3 /* 46.json */; };
+		ABC4AB94274C83960049C5D3 /* 44.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB56274C83920049C5D3 /* 44.json */; };
+		ABC4AB95274C83960049C5D3 /* 15.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB57274C83920049C5D3 /* 15.json */; };
+		ABC4AB96274C83960049C5D3 /* 95.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB58274C83920049C5D3 /* 95.json */; };
+		ABC4AB97274C83960049C5D3 /* 37.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB59274C83920049C5D3 /* 37.json */; };
+		ABC4AB98274C83960049C5D3 /* 68.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB5A274C83920049C5D3 /* 68.json */; };
+		ABC4AB99274C83960049C5D3 /* 77.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB5B274C83920049C5D3 /* 77.json */; };
+		ABC4AB9A274C83960049C5D3 /* 10.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB5C274C83920049C5D3 /* 10.json */; };
+		ABC4AB9B274C83960049C5D3 /* 12.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB5D274C83920049C5D3 /* 12.json */; };
+		ABC4AB9C274C83960049C5D3 /* 26.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB5E274C83920049C5D3 /* 26.json */; };
+		ABC4AB9D274C83960049C5D3 /* 60.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB5F274C83920049C5D3 /* 60.json */; };
+		ABC4AB9E274C83960049C5D3 /* 92.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB60274C83920049C5D3 /* 92.json */; };
+		ABC4AB9F274C83960049C5D3 /* 94.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB61274C83920049C5D3 /* 94.json */; };
+		ABC4ABA0274C83960049C5D3 /* 52.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB62274C83920049C5D3 /* 52.json */; };
+		ABC4ABA1274C83960049C5D3 /* 31.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB63274C83930049C5D3 /* 31.json */; };
+		ABC4ABA2274C83960049C5D3 /* 62.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB64274C83930049C5D3 /* 62.json */; };
+		ABC4ABA3274C83960049C5D3 /* 49.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB65274C83930049C5D3 /* 49.json */; };
+		ABC4ABA4274C83960049C5D3 /* 30.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB66274C83930049C5D3 /* 30.json */; };
+		ABC4ABA5274C83960049C5D3 /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB67274C83930049C5D3 /* city.json */; };
+		ABC4ABA6274C83960049C5D3 /* 79.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB68274C83930049C5D3 /* 79.json */; };
+		ABC4ABA7274C83960049C5D3 /* 84.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB69274C83930049C5D3 /* 84.json */; };
+		ABC4ABA8274C83960049C5D3 /* 74.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB6A274C83930049C5D3 /* 74.json */; };
+		ABC4ABA9274C83960049C5D3 /* 48.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB6B274C83930049C5D3 /* 48.json */; };
+		ABC4ABAA274C83960049C5D3 /* 27.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB6C274C83930049C5D3 /* 27.json */; };
+		ABC4ABAB274C83960049C5D3 /* 96.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB6D274C83930049C5D3 /* 96.json */; };
+		ABC4ABAC274C83960049C5D3 /* 01.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB6E274C83930049C5D3 /* 01.json */; };
+		ABC4ABAD274C83960049C5D3 /* 36.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB6F274C83930049C5D3 /* 36.json */; };
+		ABC4ABAE274C83960049C5D3 /* 51.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB70274C83940049C5D3 /* 51.json */; };
+		ABC4ABAF274C83960049C5D3 /* 08.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB71274C83940049C5D3 /* 08.json */; };
+		ABC4ABB0274C83960049C5D3 /* 20.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB72274C83940049C5D3 /* 20.json */; };
+		ABC4ABB1274C83960049C5D3 /* 80.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB73274C83940049C5D3 /* 80.json */; };
+		ABC4ABB2274C83960049C5D3 /* 75.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB74274C83940049C5D3 /* 75.json */; };
+		ABC4ABB3274C83960049C5D3 /* 70.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB75274C83940049C5D3 /* 70.json */; };
+		ABC4ABB4274C83960049C5D3 /* 64.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB76274C83940049C5D3 /* 64.json */; };
+		ABC4ABB5274C83960049C5D3 /* 02.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB77274C83940049C5D3 /* 02.json */; };
+		ABC4ABB6274C83960049C5D3 /* 54.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB78274C83940049C5D3 /* 54.json */; };
+		ABC4ABB7274C83960049C5D3 /* 58.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB79274C83940049C5D3 /* 58.json */; };
+		ABC4ABB8274C83960049C5D3 /* 11.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB7A274C83940049C5D3 /* 11.json */; };
+		ABC4ABB9274C83960049C5D3 /* 83.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB7B274C83940049C5D3 /* 83.json */; };
+		ABC4ABBA274C83960049C5D3 /* 35.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB7C274C83940049C5D3 /* 35.json */; };
+		ABC4ABBB274C83960049C5D3 /* 86.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB7D274C83940049C5D3 /* 86.json */; };
+		ABC4ABBC274C83960049C5D3 /* 66.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB7E274C83940049C5D3 /* 66.json */; };
+		ABC4ABBD274C83960049C5D3 /* 89.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB7F274C83950049C5D3 /* 89.json */; };
+		ABC4ABBE274C83960049C5D3 /* 24.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB80274C83950049C5D3 /* 24.json */; };
+		ABC4ABBF274C83960049C5D3 /* 06.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB81274C83950049C5D3 /* 06.json */; };
+		ABC4ABC0274C83960049C5D3 /* 87.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB82274C83950049C5D3 /* 87.json */; };
+		ABC4ABC1274C83960049C5D3 /* 14.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB83274C83950049C5D3 /* 14.json */; };
+		ABC4ABC2274C83960049C5D3 /* 82.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB84274C83950049C5D3 /* 82.json */; };
+		ABC4ABC3274C83960049C5D3 /* 38.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB85274C83950049C5D3 /* 38.json */; };
+		ABC4ABC4274C83960049C5D3 /* 93.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB86274C83950049C5D3 /* 93.json */; };
+		ABC4ABC5274C83960049C5D3 /* 45.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB87274C83950049C5D3 /* 45.json */; };
+		ABC4ABC6274C83960049C5D3 /* 25.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB88274C83950049C5D3 /* 25.json */; };
+		ABC4ABC7274C83960049C5D3 /* 42.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB89274C83950049C5D3 /* 42.json */; };
+		ABC4ABC8274C83960049C5D3 /* 72.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB8A274C83950049C5D3 /* 72.json */; };
+		ABC4ABC9274C83960049C5D3 /* 40.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB8B274C83950049C5D3 /* 40.json */; };
+		ABC4ABCA274C83960049C5D3 /* 33.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB8C274C83960049C5D3 /* 33.json */; };
+		ABC4ABCB274C83960049C5D3 /* 04.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB8D274C83960049C5D3 /* 04.json */; };
+		ABC4ABCC274C83960049C5D3 /* 19.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB8E274C83960049C5D3 /* 19.json */; };
+		ABC4ABCD274C83960049C5D3 /* 91.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB8F274C83960049C5D3 /* 91.json */; };
+		ABC4ABCE274C83960049C5D3 /* 56.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB90274C83960049C5D3 /* 56.json */; };
+		ABC4ABCF274C83960049C5D3 /* 22.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC4AB91274C83960049C5D3 /* 22.json */; };
+		ABC4ABD3274CF4390049C5D3 /* LabelCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC4ABD1274CF4390049C5D3 /* LabelCollectionReusableView.swift */; };
+		ABC4ABD4274CF4390049C5D3 /* LabelCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABC4ABD2274CF4390049C5D3 /* LabelCollectionReusableView.xib */; };
+		ABC4ABD7274D04240049C5D3 /* PriceFieldCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC4ABD5274D04240049C5D3 /* PriceFieldCollectionViewCell.swift */; };
+		ABC4ABD8274D04240049C5D3 /* PriceFieldCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABC4ABD6274D04240049C5D3 /* PriceFieldCollectionViewCell.xib */; };
+		ABC4ABDA274D09BD0049C5D3 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC4ABD9274D09BD0049C5D3 /* Price.swift */; };
+		ABC4ABDC274D2B360049C5D3 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC4ABDB274D2B360049C5D3 /* Double+.swift */; };
 		ABE1333A2745780B00EC9377 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE133392745780B00EC9377 /* Date+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D8274707855EB800EE19E72 /* Pods-WSManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSManager.debug.xcconfig"; path = "Target Support Files/Pods-WSManager/Pods-WSManager.debug.xcconfig"; sourceTree = "<group>"; };
+		2D4E3E5F2C5FEE54668D41E7 /* Pods-WSManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSManager.release.xcconfig"; path = "Target Support Files/Pods-WSManager/Pods-WSManager.release.xcconfig"; sourceTree = "<group>"; };
+		7183F72C43DFDAA5A7F38C24 /* Pods_WSManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB075F072744FBFA0063440F /* InforTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InforTextFields.swift; sourceTree = "<group>"; };
 		AB075F092744FC060063440F /* InforTextFields.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InforTextFields.xib; sourceTree = "<group>"; };
 		AB24E25027434684004148B2 /* WSManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +180,12 @@
 		AB24E2B32744128B004148B2 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		AB24E2B5274412A9004148B2 /* ValidatorConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorConvertible.swift; sourceTree = "<group>"; };
 		AB24E2B727442DE3004148B2 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		AB4E0A72274DD75700B7CD58 /* FeatureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB4E0A73274DD75700B7CD58 /* FeatureCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeatureCollectionViewCell.xib; sourceTree = "<group>"; };
+		AB4E0A76274DDF3000B7CD58 /* ImageFieldCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFieldCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB4E0A77274DDF3000B7CD58 /* ImageFieldCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageFieldCollectionViewCell.xib; sourceTree = "<group>"; };
+		AB531E05274AD7C6005E1459 /* CreateFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFieldViewController.swift; sourceTree = "<group>"; };
+		AB531E06274AD7C6005E1459 /* CreateFieldViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateFieldViewController.xib; sourceTree = "<group>"; };
 		AB8A213E2745EFA700AD1F22 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AB8A213F2745EFA700AD1F22 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		AB8A21442746384E00AD1F22 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
@@ -99,6 +193,84 @@
 		AB8A21482746395C00AD1F22 /* Cache+Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cache+Entry.swift"; sourceTree = "<group>"; };
 		AB8A214A27463B1500AD1F22 /* Cache+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cache+.swift"; sourceTree = "<group>"; };
 		AB8A214C27463C1900AD1F22 /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
+		ABBE4C82274B43600027FAD4 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		ABBE4C84274BA5E40027FAD4 /* FieldInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldInput.swift; sourceTree = "<group>"; };
+		ABBE4C86274BA5F00027FAD4 /* FieldInput.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FieldInput.xib; sourceTree = "<group>"; };
+		ABBE4C89274BA7E90027FAD4 /* InforFieldCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InforFieldCollectionViewCell.swift; sourceTree = "<group>"; };
+		ABBE4C8A274BA7E90027FAD4 /* InforFieldCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InforFieldCollectionViewCell.xib; sourceTree = "<group>"; };
+		ABBE4C8E274BD1E20027FAD4 /* FieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldType.swift; sourceTree = "<group>"; };
+		ABBE4C90274BD27A0027FAD4 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		ABBE4C92274BD2960027FAD4 /* District.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
+		ABBE4C95274C06000027FAD4 /* FieldTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldTypeTableViewCell.swift; sourceTree = "<group>"; };
+		ABBE4C96274C06000027FAD4 /* FieldTypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FieldTypeTableViewCell.xib; sourceTree = "<group>"; };
+		ABC4AB54274C83910049C5D3 /* 17.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 17.json; sourceTree = "<group>"; };
+		ABC4AB55274C83920049C5D3 /* 46.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 46.json; sourceTree = "<group>"; };
+		ABC4AB56274C83920049C5D3 /* 44.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 44.json; sourceTree = "<group>"; };
+		ABC4AB57274C83920049C5D3 /* 15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 15.json; sourceTree = "<group>"; };
+		ABC4AB58274C83920049C5D3 /* 95.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 95.json; sourceTree = "<group>"; };
+		ABC4AB59274C83920049C5D3 /* 37.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 37.json; sourceTree = "<group>"; };
+		ABC4AB5A274C83920049C5D3 /* 68.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 68.json; sourceTree = "<group>"; };
+		ABC4AB5B274C83920049C5D3 /* 77.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 77.json; sourceTree = "<group>"; };
+		ABC4AB5C274C83920049C5D3 /* 10.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 10.json; sourceTree = "<group>"; };
+		ABC4AB5D274C83920049C5D3 /* 12.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 12.json; sourceTree = "<group>"; };
+		ABC4AB5E274C83920049C5D3 /* 26.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 26.json; sourceTree = "<group>"; };
+		ABC4AB5F274C83920049C5D3 /* 60.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 60.json; sourceTree = "<group>"; };
+		ABC4AB60274C83920049C5D3 /* 92.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 92.json; sourceTree = "<group>"; };
+		ABC4AB61274C83920049C5D3 /* 94.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 94.json; sourceTree = "<group>"; };
+		ABC4AB62274C83920049C5D3 /* 52.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 52.json; sourceTree = "<group>"; };
+		ABC4AB63274C83930049C5D3 /* 31.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 31.json; sourceTree = "<group>"; };
+		ABC4AB64274C83930049C5D3 /* 62.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 62.json; sourceTree = "<group>"; };
+		ABC4AB65274C83930049C5D3 /* 49.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 49.json; sourceTree = "<group>"; };
+		ABC4AB66274C83930049C5D3 /* 30.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 30.json; sourceTree = "<group>"; };
+		ABC4AB67274C83930049C5D3 /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
+		ABC4AB68274C83930049C5D3 /* 79.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 79.json; sourceTree = "<group>"; };
+		ABC4AB69274C83930049C5D3 /* 84.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 84.json; sourceTree = "<group>"; };
+		ABC4AB6A274C83930049C5D3 /* 74.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 74.json; sourceTree = "<group>"; };
+		ABC4AB6B274C83930049C5D3 /* 48.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 48.json; sourceTree = "<group>"; };
+		ABC4AB6C274C83930049C5D3 /* 27.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 27.json; sourceTree = "<group>"; };
+		ABC4AB6D274C83930049C5D3 /* 96.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 96.json; sourceTree = "<group>"; };
+		ABC4AB6E274C83930049C5D3 /* 01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 01.json; sourceTree = "<group>"; };
+		ABC4AB6F274C83930049C5D3 /* 36.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 36.json; sourceTree = "<group>"; };
+		ABC4AB70274C83940049C5D3 /* 51.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 51.json; sourceTree = "<group>"; };
+		ABC4AB71274C83940049C5D3 /* 08.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 08.json; sourceTree = "<group>"; };
+		ABC4AB72274C83940049C5D3 /* 20.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 20.json; sourceTree = "<group>"; };
+		ABC4AB73274C83940049C5D3 /* 80.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 80.json; sourceTree = "<group>"; };
+		ABC4AB74274C83940049C5D3 /* 75.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 75.json; sourceTree = "<group>"; };
+		ABC4AB75274C83940049C5D3 /* 70.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 70.json; sourceTree = "<group>"; };
+		ABC4AB76274C83940049C5D3 /* 64.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 64.json; sourceTree = "<group>"; };
+		ABC4AB77274C83940049C5D3 /* 02.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 02.json; sourceTree = "<group>"; };
+		ABC4AB78274C83940049C5D3 /* 54.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 54.json; sourceTree = "<group>"; };
+		ABC4AB79274C83940049C5D3 /* 58.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 58.json; sourceTree = "<group>"; };
+		ABC4AB7A274C83940049C5D3 /* 11.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 11.json; sourceTree = "<group>"; };
+		ABC4AB7B274C83940049C5D3 /* 83.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 83.json; sourceTree = "<group>"; };
+		ABC4AB7C274C83940049C5D3 /* 35.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 35.json; sourceTree = "<group>"; };
+		ABC4AB7D274C83940049C5D3 /* 86.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 86.json; sourceTree = "<group>"; };
+		ABC4AB7E274C83940049C5D3 /* 66.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 66.json; sourceTree = "<group>"; };
+		ABC4AB7F274C83950049C5D3 /* 89.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 89.json; sourceTree = "<group>"; };
+		ABC4AB80274C83950049C5D3 /* 24.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 24.json; sourceTree = "<group>"; };
+		ABC4AB81274C83950049C5D3 /* 06.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 06.json; sourceTree = "<group>"; };
+		ABC4AB82274C83950049C5D3 /* 87.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 87.json; sourceTree = "<group>"; };
+		ABC4AB83274C83950049C5D3 /* 14.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 14.json; sourceTree = "<group>"; };
+		ABC4AB84274C83950049C5D3 /* 82.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 82.json; sourceTree = "<group>"; };
+		ABC4AB85274C83950049C5D3 /* 38.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 38.json; sourceTree = "<group>"; };
+		ABC4AB86274C83950049C5D3 /* 93.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 93.json; sourceTree = "<group>"; };
+		ABC4AB87274C83950049C5D3 /* 45.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 45.json; sourceTree = "<group>"; };
+		ABC4AB88274C83950049C5D3 /* 25.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 25.json; sourceTree = "<group>"; };
+		ABC4AB89274C83950049C5D3 /* 42.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 42.json; sourceTree = "<group>"; };
+		ABC4AB8A274C83950049C5D3 /* 72.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 72.json; sourceTree = "<group>"; };
+		ABC4AB8B274C83950049C5D3 /* 40.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 40.json; sourceTree = "<group>"; };
+		ABC4AB8C274C83960049C5D3 /* 33.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 33.json; sourceTree = "<group>"; };
+		ABC4AB8D274C83960049C5D3 /* 04.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 04.json; sourceTree = "<group>"; };
+		ABC4AB8E274C83960049C5D3 /* 19.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 19.json; sourceTree = "<group>"; };
+		ABC4AB8F274C83960049C5D3 /* 91.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 91.json; sourceTree = "<group>"; };
+		ABC4AB90274C83960049C5D3 /* 56.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 56.json; sourceTree = "<group>"; };
+		ABC4AB91274C83960049C5D3 /* 22.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 22.json; sourceTree = "<group>"; };
+		ABC4ABD1274CF4390049C5D3 /* LabelCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCollectionReusableView.swift; sourceTree = "<group>"; };
+		ABC4ABD2274CF4390049C5D3 /* LabelCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelCollectionReusableView.xib; sourceTree = "<group>"; };
+		ABC4ABD5274D04240049C5D3 /* PriceFieldCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceFieldCollectionViewCell.swift; sourceTree = "<group>"; };
+		ABC4ABD6274D04240049C5D3 /* PriceFieldCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceFieldCollectionViewCell.xib; sourceTree = "<group>"; };
+		ABC4ABD9274D09BD0049C5D3 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		ABC4ABDB274D2B360049C5D3 /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
 		ABE133392745780B00EC9377 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,17 +279,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A424B2C039C524E21E042E7 /* Pods_WSManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29E5C97933847BD29B419DE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D8274707855EB800EE19E72 /* Pods-WSManager.debug.xcconfig */,
+				2D4E3E5F2C5FEE54668D41E7 /* Pods-WSManager.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A1AD878EE778CBF7DDEDF519 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7183F72C43DFDAA5A7F38C24 /* Pods_WSManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB24E24727434684004148B2 = {
 			isa = PBXGroup;
 			children = (
 				AB24E25227434684004148B2 /* WSManager */,
 				AB24E25127434684004148B2 /* Products */,
+				29E5C97933847BD29B419DE3 /* Pods */,
+				A1AD878EE778CBF7DDEDF519 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,13 +324,14 @@
 		AB24E25227434684004148B2 /* WSManager */ = {
 			isa = PBXGroup;
 			children = (
+				ABC4AB53274C837A0049C5D3 /* Location */,
 				AB24E26727434752004148B2 /* Delegates */,
 				AB24E26C2743477B004148B2 /* Protocol */,
 				AB24E26B27434771004148B2 /* Extension */,
+				AB24E27D2743600C004148B2 /* Cells */,
 				AB24E26927434767004148B2 /* View */,
 				AB24E26827434761004148B2 /* Model */,
 				AB24E26A2743476C004148B2 /* Controller */,
-				AB24E27D2743600C004148B2 /* Cells */,
 				AB24E25C27434685004148B2 /* Assets.xcassets */,
 				AB24E25E27434685004148B2 /* LaunchScreen.storyboard */,
 				AB24E26127434685004148B2 /* Info.plist */,
@@ -158,6 +351,7 @@
 		AB24E26827434761004148B2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ABBE4C8D274BD1A60027FAD4 /* Field */,
 				AB8A21432746384400AD1F22 /* Cache */,
 				AB8A21422746381900AD1F22 /* Validator */,
 				AB24E29F27439E94004148B2 /* Others */,
@@ -177,6 +371,8 @@
 				AB24E2A32743AAA8004148B2 /* CustomTextField.xib */,
 				AB075F072744FBFA0063440F /* InforTextFields.swift */,
 				AB075F092744FC060063440F /* InforTextFields.xib */,
+				ABBE4C84274BA5E40027FAD4 /* FieldInput.swift */,
+				ABBE4C86274BA5F00027FAD4 /* FieldInput.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,7 +380,7 @@
 		AB24E26A2743476C004148B2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AB8A213D2745EDCF00AD1F22 /* OwnerScreen */,
+				AB8A213D2745EDCF00AD1F22 /* RenterScreen */,
 				AB24E29A27439A55004148B2 /* AuthScreen */,
 				AB24E29927439A49004148B2 /* SplashScreen */,
 				AB24E25727434684004148B2 /* MainViewController.swift */,
@@ -205,6 +401,8 @@
 				AB8A21462746390200AD1F22 /* Cache+WrappedKey.swift */,
 				AB8A21482746395C00AD1F22 /* Cache+Entry.swift */,
 				AB8A214A27463B1500AD1F22 /* Cache+.swift */,
+				ABBE4C82274B43600027FAD4 /* UIApplication+.swift */,
+				ABC4ABDB274D2B360049C5D3 /* Double+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -232,6 +430,8 @@
 		AB24E27D2743600C004148B2 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				ABC4ABD0274CF2620049C5D3 /* BoundaryView */,
+				ABBE4C94274C05BF0027FAD4 /* DropDownCell */,
 				AB24E2822743610A004148B2 /* CollectionViewCell */,
 			);
 			path = Cells;
@@ -240,6 +440,7 @@
 		AB24E2822743610A004148B2 /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				ABBE4C88274BA7190027FAD4 /* FieldInput */,
 				AB24E2832743614B004148B2 /* SplashCollectionViewCell.swift */,
 				AB24E2842743614B004148B2 /* SplashCollectionViewCell.xib */,
 			);
@@ -274,13 +475,15 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
-		AB8A213D2745EDCF00AD1F22 /* OwnerScreen */ = {
+		AB8A213D2745EDCF00AD1F22 /* RenterScreen */ = {
 			isa = PBXGroup;
 			children = (
 				AB8A213E2745EFA700AD1F22 /* HomeViewController.swift */,
 				AB8A213F2745EFA700AD1F22 /* HomeViewController.xib */,
+				AB531E05274AD7C6005E1459 /* CreateFieldViewController.swift */,
+				AB531E06274AD7C6005E1459 /* CreateFieldViewController.xib */,
 			);
-			path = OwnerScreen;
+			path = RenterScreen;
 			sourceTree = "<group>";
 		};
 		AB8A21422746381900AD1F22 /* Validator */ = {
@@ -301,6 +504,119 @@
 			path = Cache;
 			sourceTree = "<group>";
 		};
+		ABBE4C88274BA7190027FAD4 /* FieldInput */ = {
+			isa = PBXGroup;
+			children = (
+				ABBE4C89274BA7E90027FAD4 /* InforFieldCollectionViewCell.swift */,
+				ABBE4C8A274BA7E90027FAD4 /* InforFieldCollectionViewCell.xib */,
+				ABC4ABD5274D04240049C5D3 /* PriceFieldCollectionViewCell.swift */,
+				ABC4ABD6274D04240049C5D3 /* PriceFieldCollectionViewCell.xib */,
+				AB4E0A72274DD75700B7CD58 /* FeatureCollectionViewCell.swift */,
+				AB4E0A73274DD75700B7CD58 /* FeatureCollectionViewCell.xib */,
+				AB4E0A76274DDF3000B7CD58 /* ImageFieldCollectionViewCell.swift */,
+				AB4E0A77274DDF3000B7CD58 /* ImageFieldCollectionViewCell.xib */,
+			);
+			path = FieldInput;
+			sourceTree = "<group>";
+		};
+		ABBE4C8D274BD1A60027FAD4 /* Field */ = {
+			isa = PBXGroup;
+			children = (
+				ABBE4C8E274BD1E20027FAD4 /* FieldType.swift */,
+				ABBE4C90274BD27A0027FAD4 /* City.swift */,
+				ABBE4C92274BD2960027FAD4 /* District.swift */,
+				ABC4ABD9274D09BD0049C5D3 /* Price.swift */,
+			);
+			path = Field;
+			sourceTree = "<group>";
+		};
+		ABBE4C94274C05BF0027FAD4 /* DropDownCell */ = {
+			isa = PBXGroup;
+			children = (
+				ABBE4C95274C06000027FAD4 /* FieldTypeTableViewCell.swift */,
+				ABBE4C96274C06000027FAD4 /* FieldTypeTableViewCell.xib */,
+			);
+			path = DropDownCell;
+			sourceTree = "<group>";
+		};
+		ABC4AB53274C837A0049C5D3 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				ABC4AB6E274C83930049C5D3 /* 01.json */,
+				ABC4AB77274C83940049C5D3 /* 02.json */,
+				ABC4AB8D274C83960049C5D3 /* 04.json */,
+				ABC4AB81274C83950049C5D3 /* 06.json */,
+				ABC4AB71274C83940049C5D3 /* 08.json */,
+				ABC4AB5C274C83920049C5D3 /* 10.json */,
+				ABC4AB7A274C83940049C5D3 /* 11.json */,
+				ABC4AB5D274C83920049C5D3 /* 12.json */,
+				ABC4AB83274C83950049C5D3 /* 14.json */,
+				ABC4AB57274C83920049C5D3 /* 15.json */,
+				ABC4AB54274C83910049C5D3 /* 17.json */,
+				ABC4AB8E274C83960049C5D3 /* 19.json */,
+				ABC4AB72274C83940049C5D3 /* 20.json */,
+				ABC4AB91274C83960049C5D3 /* 22.json */,
+				ABC4AB80274C83950049C5D3 /* 24.json */,
+				ABC4AB88274C83950049C5D3 /* 25.json */,
+				ABC4AB5E274C83920049C5D3 /* 26.json */,
+				ABC4AB6C274C83930049C5D3 /* 27.json */,
+				ABC4AB66274C83930049C5D3 /* 30.json */,
+				ABC4AB63274C83930049C5D3 /* 31.json */,
+				ABC4AB8C274C83960049C5D3 /* 33.json */,
+				ABC4AB7C274C83940049C5D3 /* 35.json */,
+				ABC4AB6F274C83930049C5D3 /* 36.json */,
+				ABC4AB59274C83920049C5D3 /* 37.json */,
+				ABC4AB85274C83950049C5D3 /* 38.json */,
+				ABC4AB8B274C83950049C5D3 /* 40.json */,
+				ABC4AB89274C83950049C5D3 /* 42.json */,
+				ABC4AB56274C83920049C5D3 /* 44.json */,
+				ABC4AB87274C83950049C5D3 /* 45.json */,
+				ABC4AB55274C83920049C5D3 /* 46.json */,
+				ABC4AB6B274C83930049C5D3 /* 48.json */,
+				ABC4AB65274C83930049C5D3 /* 49.json */,
+				ABC4AB70274C83940049C5D3 /* 51.json */,
+				ABC4AB62274C83920049C5D3 /* 52.json */,
+				ABC4AB78274C83940049C5D3 /* 54.json */,
+				ABC4AB90274C83960049C5D3 /* 56.json */,
+				ABC4AB79274C83940049C5D3 /* 58.json */,
+				ABC4AB5F274C83920049C5D3 /* 60.json */,
+				ABC4AB64274C83930049C5D3 /* 62.json */,
+				ABC4AB76274C83940049C5D3 /* 64.json */,
+				ABC4AB7E274C83940049C5D3 /* 66.json */,
+				ABC4AB5A274C83920049C5D3 /* 68.json */,
+				ABC4AB75274C83940049C5D3 /* 70.json */,
+				ABC4AB8A274C83950049C5D3 /* 72.json */,
+				ABC4AB6A274C83930049C5D3 /* 74.json */,
+				ABC4AB74274C83940049C5D3 /* 75.json */,
+				ABC4AB5B274C83920049C5D3 /* 77.json */,
+				ABC4AB68274C83930049C5D3 /* 79.json */,
+				ABC4AB73274C83940049C5D3 /* 80.json */,
+				ABC4AB84274C83950049C5D3 /* 82.json */,
+				ABC4AB7B274C83940049C5D3 /* 83.json */,
+				ABC4AB69274C83930049C5D3 /* 84.json */,
+				ABC4AB7D274C83940049C5D3 /* 86.json */,
+				ABC4AB82274C83950049C5D3 /* 87.json */,
+				ABC4AB7F274C83950049C5D3 /* 89.json */,
+				ABC4AB8F274C83960049C5D3 /* 91.json */,
+				ABC4AB60274C83920049C5D3 /* 92.json */,
+				ABC4AB86274C83950049C5D3 /* 93.json */,
+				ABC4AB61274C83920049C5D3 /* 94.json */,
+				ABC4AB58274C83920049C5D3 /* 95.json */,
+				ABC4AB6D274C83930049C5D3 /* 96.json */,
+				ABC4AB67274C83930049C5D3 /* city.json */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		ABC4ABD0274CF2620049C5D3 /* BoundaryView */ = {
+			isa = PBXGroup;
+			children = (
+				ABC4ABD1274CF4390049C5D3 /* LabelCollectionReusableView.swift */,
+				ABC4ABD2274CF4390049C5D3 /* LabelCollectionReusableView.xib */,
+			);
+			path = BoundaryView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,9 +624,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB24E26427434685004148B2 /* Build configuration list for PBXNativeTarget "WSManager" */;
 			buildPhases = (
+				7B7B8EB061FBE461EA763174 /* [CP] Check Pods Manifest.lock */,
 				AB24E24C27434684004148B2 /* Sources */,
 				AB24E24D27434684004148B2 /* Frameworks */,
 				AB24E24E27434684004148B2 /* Resources */,
+				C6FCDF6B09FA7054C77EA124 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,19 +676,131 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC4ABB5274C83960049C5D3 /* 02.json in Resources */,
+				ABC4ABAF274C83960049C5D3 /* 08.json in Resources */,
+				ABBE4C8C274BA7E90027FAD4 /* InforFieldCollectionViewCell.xib in Resources */,
+				ABC4ABBA274C83960049C5D3 /* 35.json in Resources */,
+				ABC4ABB7274C83960049C5D3 /* 58.json in Resources */,
+				ABC4AB98274C83960049C5D3 /* 68.json in Resources */,
+				ABC4ABC9274C83960049C5D3 /* 40.json in Resources */,
+				ABC4AB9D274C83960049C5D3 /* 60.json in Resources */,
+				ABC4ABBB274C83960049C5D3 /* 86.json in Resources */,
+				ABC4ABA2274C83960049C5D3 /* 62.json in Resources */,
+				AB4E0A79274DDF3000B7CD58 /* ImageFieldCollectionViewCell.xib in Resources */,
 				AB24E29E27439A72004148B2 /* LoginViewController.xib in Resources */,
+				ABC4ABA6274C83960049C5D3 /* 79.json in Resources */,
+				ABC4ABBE274C83960049C5D3 /* 24.json in Resources */,
+				ABC4AB99274C83960049C5D3 /* 77.json in Resources */,
+				ABC4ABA3274C83960049C5D3 /* 49.json in Resources */,
+				ABC4ABB4274C83960049C5D3 /* 64.json in Resources */,
+				ABC4ABB0274C83960049C5D3 /* 20.json in Resources */,
+				ABC4ABB8274C83960049C5D3 /* 11.json in Resources */,
+				ABC4AB95274C83960049C5D3 /* 15.json in Resources */,
+				ABC4AB9F274C83960049C5D3 /* 94.json in Resources */,
+				ABC4AB9B274C83960049C5D3 /* 12.json in Resources */,
+				ABC4ABC5274C83960049C5D3 /* 45.json in Resources */,
+				ABC4ABBC274C83960049C5D3 /* 66.json in Resources */,
+				ABC4ABC3274C83960049C5D3 /* 38.json in Resources */,
+				ABC4ABCF274C83960049C5D3 /* 22.json in Resources */,
+				ABC4AB96274C83960049C5D3 /* 95.json in Resources */,
 				AB24E26027434685004148B2 /* LaunchScreen.storyboard in Resources */,
+				ABC4AB93274C83960049C5D3 /* 46.json in Resources */,
+				ABC4ABB6274C83960049C5D3 /* 54.json in Resources */,
+				ABC4ABB9274C83960049C5D3 /* 83.json in Resources */,
+				ABC4ABD8274D04240049C5D3 /* PriceFieldCollectionViewCell.xib in Resources */,
+				ABC4ABC4274C83960049C5D3 /* 93.json in Resources */,
 				AB24E2B02743F1A3004148B2 /* SignUpViewController.xib in Resources */,
+				ABC4ABBF274C83960049C5D3 /* 06.json in Resources */,
+				ABC4AB97274C83960049C5D3 /* 37.json in Resources */,
+				ABC4AB9A274C83960049C5D3 /* 10.json in Resources */,
+				ABC4ABC0274C83960049C5D3 /* 87.json in Resources */,
 				AB24E2A42743AAA8004148B2 /* CustomTextField.xib in Resources */,
+				ABC4ABA8274C83960049C5D3 /* 74.json in Resources */,
+				ABC4ABCB274C83960049C5D3 /* 04.json in Resources */,
+				ABC4AB9E274C83960049C5D3 /* 92.json in Resources */,
+				ABC4ABAD274C83960049C5D3 /* 36.json in Resources */,
+				ABC4ABC2274C83960049C5D3 /* 82.json in Resources */,
+				ABC4ABA5274C83960049C5D3 /* city.json in Resources */,
+				ABC4ABCE274C83960049C5D3 /* 56.json in Resources */,
+				ABC4ABB1274C83960049C5D3 /* 80.json in Resources */,
+				ABC4ABA4274C83960049C5D3 /* 30.json in Resources */,
+				ABC4ABA7274C83960049C5D3 /* 84.json in Resources */,
 				AB24E27A274355F4004148B2 /* SplashViewController.xib in Resources */,
+				ABC4ABAC274C83960049C5D3 /* 01.json in Resources */,
+				ABC4ABAB274C83960049C5D3 /* 96.json in Resources */,
+				ABC4ABAE274C83960049C5D3 /* 51.json in Resources */,
+				ABC4AB94274C83960049C5D3 /* 44.json in Resources */,
+				ABC4ABCD274C83960049C5D3 /* 91.json in Resources */,
+				ABC4ABA1274C83960049C5D3 /* 31.json in Resources */,
+				ABC4ABB2274C83960049C5D3 /* 75.json in Resources */,
+				ABC4AB9C274C83960049C5D3 /* 26.json in Resources */,
 				AB24E25D27434685004148B2 /* Assets.xcassets in Resources */,
+				ABC4ABCA274C83960049C5D3 /* 33.json in Resources */,
+				ABC4ABD4274CF4390049C5D3 /* LabelCollectionReusableView.xib in Resources */,
+				ABBE4C98274C06000027FAD4 /* FieldTypeTableViewCell.xib in Resources */,
 				AB075F0A2744FC060063440F /* InforTextFields.xib in Resources */,
+				ABC4ABCC274C83960049C5D3 /* 19.json in Resources */,
+				ABC4ABA0274C83960049C5D3 /* 52.json in Resources */,
+				ABC4ABBD274C83960049C5D3 /* 89.json in Resources */,
+				AB531E08274AD7C6005E1459 /* CreateFieldViewController.xib in Resources */,
+				ABC4ABAA274C83960049C5D3 /* 27.json in Resources */,
+				ABC4ABA9274C83960049C5D3 /* 48.json in Resources */,
+				AB4E0A75274DD75700B7CD58 /* FeatureCollectionViewCell.xib in Resources */,
 				AB24E2862743614B004148B2 /* SplashCollectionViewCell.xib in Resources */,
+				ABC4ABC8274C83960049C5D3 /* 72.json in Resources */,
+				ABC4ABC6274C83960049C5D3 /* 25.json in Resources */,
+				ABBE4C87274BA5F00027FAD4 /* FieldInput.xib in Resources */,
 				AB8A21412745EFA700AD1F22 /* HomeViewController.xib in Resources */,
+				ABC4ABB3274C83960049C5D3 /* 70.json in Resources */,
+				ABC4AB92274C83960049C5D3 /* 17.json in Resources */,
+				ABC4ABC7274C83960049C5D3 /* 42.json in Resources */,
+				ABC4ABC1274C83960049C5D3 /* 14.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B7B8EB061FBE461EA763174 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WSManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6FCDF6B09FA7054C77EA124 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WSManager/Pods-WSManager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WSManager/Pods-WSManager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WSManager/Pods-WSManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB24E24C27434684004148B2 /* Sources */ = {
@@ -378,38 +808,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB24E2742743499F004148B2 /* EndPoint.swift in Sources */,
+				ABBE4C97274C06000027FAD4 /* FieldTypeTableViewCell.swift in Sources */,
 				AB24E28C274365F2004148B2 /* UIView+.swift in Sources */,
 				AB24E29827439956004148B2 /* RootViewController.swift in Sources */,
 				AB24E296274398A5004148B2 /* ChangeRootViewProtocol.swift in Sources */,
 				ABE1333A2745780B00EC9377 /* Date+.swift in Sources */,
+				AB4E0A78274DDF3000B7CD58 /* ImageFieldCollectionViewCell.swift in Sources */,
 				AB24E2A22743AA97004148B2 /* CustomTextField.swift in Sources */,
 				AB24E29D27439A72004148B2 /* LoginViewController.swift in Sources */,
+				ABBE4C8B274BA7E90027FAD4 /* InforFieldCollectionViewCell.swift in Sources */,
+				ABBE4C85274BA5E40027FAD4 /* FieldInput.swift in Sources */,
+				ABC4ABD3274CF4390049C5D3 /* LabelCollectionReusableView.swift in Sources */,
 				AB8A214B27463B1500AD1F22 /* Cache+.swift in Sources */,
+				AB4E0A74274DD75700B7CD58 /* FeatureCollectionViewCell.swift in Sources */,
 				AB24E2B22744000D004148B2 /* ValidatorType.swift in Sources */,
+				ABC4ABDC274D2B360049C5D3 /* Double+.swift in Sources */,
 				AB24E2AF2743F1A3004148B2 /* SignUpViewController.swift in Sources */,
 				AB24E27F27436047004148B2 /* ReusableView.swift in Sources */,
 				AB24E25827434684004148B2 /* MainViewController.swift in Sources */,
 				AB8A21472746390200AD1F22 /* Cache+WrappedKey.swift in Sources */,
 				AB075F082744FBFA0063440F /* InforTextFields.swift in Sources */,
+				ABBE4C8F274BD1E20027FAD4 /* FieldType.swift in Sources */,
 				AB24E2B6274412A9004148B2 /* ValidatorConvertible.swift in Sources */,
 				AB24E25427434684004148B2 /* AppDelegate.swift in Sources */,
 				AB24E28A2743640A004148B2 /* SplashModel+.swift in Sources */,
 				AB8A21452746384E00AD1F22 /* Cache.swift in Sources */,
 				AB24E27127434965004148B2 /* APIManager.swift in Sources */,
 				AB24E25627434684004148B2 /* SceneDelegate.swift in Sources */,
+				ABBE4C91274BD27A0027FAD4 /* City.swift in Sources */,
 				AB24E26F27434946004148B2 /* Constants.swift in Sources */,
 				AB8A214D27463C1900AD1F22 /* ImageCacheManager.swift in Sources */,
+				ABC4ABD7274D04240049C5D3 /* PriceFieldCollectionViewCell.swift in Sources */,
 				AB24E27627434BEF004148B2 /* APIError.swift in Sources */,
 				AB24E294274393B9004148B2 /* UIViewController+.swift in Sources */,
 				AB24E281274360A9004148B2 /* ReusableView+.swift in Sources */,
 				AB24E2A62743E6BC004148B2 /* Renter.swift in Sources */,
 				AB24E279274355F4004148B2 /* SplashViewController.swift in Sources */,
+				ABBE4C93274BD2960027FAD4 /* District.swift in Sources */,
+				ABC4ABDA274D09BD0049C5D3 /* Price.swift in Sources */,
 				AB24E288274363AF004148B2 /* SplashModel.swift in Sources */,
 				AB24E27C2743567C004148B2 /* UIColor+.swift in Sources */,
 				AB8A21402745EFA700AD1F22 /* HomeViewController.swift in Sources */,
 				AB24E2B42744128B004148B2 /* Validator.swift in Sources */,
+				ABBE4C83274B43600027FAD4 /* UIApplication+.swift in Sources */,
 				AB8A21492746395C00AD1F22 /* Cache+Entry.swift in Sources */,
 				AB24E2B827442DE3004148B2 /* UITextField+.swift in Sources */,
+				AB531E07274AD7C6005E1459 /* CreateFieldViewController.swift in Sources */,
 				AB24E2A82743EC7F004148B2 /* AuthResponse.swift in Sources */,
 				AB24E2852743614B004148B2 /* SplashCollectionViewCell.swift in Sources */,
 			);
@@ -547,6 +991,7 @@
 		};
 		AB24E26527434685004148B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D8274707855EB800EE19E72 /* Pods-WSManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -565,6 +1010,7 @@
 		};
 		AB24E26627434685004148B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D4E3E5F2C5FEE54668D41E7 /* Pods-WSManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
